@@ -1,0 +1,35 @@
+{
+  "name": "miracle-gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "imagemin-webp": "^7.0.0",
+    "svg2sprite": "^2.0.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "gen-sprite": "svg2sprite app/images/svg app/images/icons-sprite.svg --stripEmptyTags --stripAttrs id -i"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browsersync-ssi": "^0.2.4",
+    "del": "^6.1.1",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-format-html": "^1.2.5",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.51.0"
+  }
+}
