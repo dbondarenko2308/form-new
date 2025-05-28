@@ -499,6 +499,7 @@ textarea {
   height: 300px;
 
   background: #4e4d4e;
+  border-radius: 13px;
 }
 
 .iti__country-list .iti__flag,
@@ -509,11 +510,14 @@ textarea {
 .iti--allow-dropdown .iti__country-list::-webkit-scrollbar {
   width: 16px;
   border: 1px solid #d1c094;
+  border-radius: 20px;
 }
 
 .iti--allow-dropdown .iti__country-list::-webkit-scrollbar-thumb {
   background: #d1c094;
   width: 16px;
+  border-radius: 20px;
+
 }
 
 .iti--container {
