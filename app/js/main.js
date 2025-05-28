@@ -4,30 +4,7 @@ $(document).ready(function() {
 		minimumResultsForSearch: 1
 	})
 
-	$('.select2-brand').select2({
-		placeholder: 'Бренд*',
-		minimumResultsForSearch: 1
-	})
 
-	$('.select2-type').select2({
-		placeholder: 'Тип оборудования*',
-		minimumResultsForSearch: 1
-	})
-
-	$('.select2-h').select2({
-		placeholder: 'Высота до внешнего блока, м*',
-		minimumResultsForSearch: 1
-	})
-
-	$('.select2-dost').select2({
-		placeholder: 'Доступность внешнего блока*',
-		minimumResultsForSearch: 1
-	})
-
-	$('.select2-work').select2({
-		placeholder: 'Получение разрешения на работы* ',
-		minimumResultsForSearch: 1
-	})
 
 	$('.field input, .field-area textarea').keyup(function() {
 		const label = $(this).parent().find('.field__label')
@@ -233,4 +210,8 @@ $(document).ready(function() {
 			$(this).closest('form').find('[data-field="REGION"]').addClass('disabled')
 		}
 	})
+
+
+
+	
 })
