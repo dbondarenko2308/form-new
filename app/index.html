@@ -59,8 +59,8 @@
 
               <div class="form-content__info">
                 <label class="field field-select" data-field="REGION">
-                  <select class="select2">
-                    <option value=""></option>
+                  <select class="select2" data-placeholder="Регион*">
+                    <option></option>
                     <option value="AL">Белгородская область</option>
                     <option value="AL">Брянская область</option>
                     <option value="AL">Белгородская область</option>
@@ -86,21 +86,21 @@
                   </select>
                 </label>
 
-                <label class="field field--error">
-                  <input type="text" />
-                  <span class="field__label">ФИО*</span>
-                </label>
                 <label class="field">
                   <input type="text" />
                   <span class="field__label">Название компании*</span>
                 </label>
                 <label class="field">
+                  <input type="number" />
+                  <span class="field__label">ИНН*</span>
+                </label>
+                <label class="field">
                   <input type="text" />
                   <span class="field__label">Email*</span>
                 </label>
-                <label class="field">
-                  <input type="number" />
-                  <span class="field__label">ИНН*</span>
+                <label class="field field--error">
+                  <input type="text" />
+                  <span class="field__label">ФИО*</span>
                 </label>
                 <div class="form-group">
                   <input
@@ -180,7 +180,7 @@
               <div class="form-content__info center">
                 <div class="form-content__left">
                   <label class="field field-select" data-field="REGION">
-                    <select class="select2">
+                    <select class="select2" data-placeholder="Регион*">
                       <option value=""></option>
                       <option value="AL">Белгородская область</option>
                       <option value="AL">Брянская область</option>
@@ -334,114 +334,114 @@
         <div class="form-content form-content-flex">
           <h3 class="form-content__title title-margin">Запросить цену</h3>
 
-            <div class="form-content__top">
-              <div class="form-content__label">Выбор страны*</div>
-              <div class="form-content__radios" data-field="COUNTRY">
-                <label class="radio">
-                  <span class="radio__inner">
-                    <input
-                      type="radio"
-                      data-country
-                      data-resident="true"
-                      name="choose"
-                    />
-                    <span></span>
-                  </span>
-                  <span class="radio__text">Резидент РФ</span>
-                </label>
-                <label class="radio">
-                  <span class="radio__inner">
-                    <input
-                      type="radio"
-                      name="choose"
-                      data-resident="false"
-                      data-country
-                    />
-                    <span></span>
-                  </span>
-                  <span class="radio__text">Не резидент РФ</span>
-                </label>
-              </div>
-
-              <div class="form-content__info">
-                <label class="field field-select" data-field="REGION">
-                  <select class="select2">
-                    <option value=""></option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                    <option value="AL">Белгородская область</option>
-                    <option value="AL">Брянская область</option>
-                  </select>
-                </label>
-
-                <label class="field field--error">
-                  <input type="text" />
-                  <span class="field__label">ФИО*</span>
-                </label>
-                <label class="field">
-                  <input type="text" />
-                  <span class="field__label">Название компании*</span>
-                </label>
-                <label class="field">
-                  <input type="text" />
-                  <span class="field__label">Email*</span>
-                </label>
-                <label class="field">
-                  <input type="number" />
-                  <span class="field__label">ИНН*</span>
-                </label>
-                <div class="form-group">
+          <div class="form-content__top">
+            <div class="form-content__label">Выбор страны*</div>
+            <div class="form-content__radios" data-field="COUNTRY">
+              <label class="radio">
+                <span class="radio__inner">
                   <input
-                    id="phone"
-                    type="tel"
-                    name="leyka_donor_phone"
-                    class="form-control tel"
-                    inputmode="tel"
-                    value=""
+                    type="radio"
+                    data-country
+                    data-resident="true"
+                    name="choose"
                   />
-                </div>
-                <div class="captcha captcha-right">
-                  <img src="images/captcha.png" alt="" />
-                </div>
-                <div class="form-content__foot">
-                  <a
-                    href="#thanks"
-                    data-fancybox
-                    class="form-content__btn btn btn-blue"
-                  >
-                    Отправить
-                  </a>
-                  <label class="checkbox">
-                    <span class="checkbox__inner">
-                      <input type="checkbox" checked />
-                      <span></span>
-                    </span>
-                    <span class="checkbox__text"
-                      >Нажимая кнопку, я принимаю
-                      <a href="#">условия соглашения</a>
-                    </span>
-                  </label>
-                </div>
+                  <span></span>
+                </span>
+                <span class="radio__text">Резидент РФ</span>
+              </label>
+              <label class="radio">
+                <span class="radio__inner">
+                  <input
+                    type="radio"
+                    name="choose"
+                    data-resident="false"
+                    data-country
+                  />
+                  <span></span>
+                </span>
+                <span class="radio__text">Не резидент РФ</span>
+              </label>
+            </div>
+
+            <div class="form-content__info">
+              <label class="field field-select" data-field="REGION">
+                <select class="select2" data-placeholder="Регион*">
+                  <option value="" selected>select</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                  <option value="AL">Белгородская область</option>
+                  <option value="AL">Брянская область</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <input type="text" />
+                <span class="field__label">Название компании*</span>
+              </label>
+              <label class="field">
+                <input type="text" />
+                <span class="field__label">Email*</span>
+              </label>
+              <label class="field">
+                <input type="number" />
+                <span class="field__label">ИНН*</span>
+              </label>
+              <label class="field field--error">
+                <input type="text" />
+                <span class="field__label">ФИО*</span>
+              </label>
+              <div class="form-group">
+                <input
+                  id="phone"
+                  type="tel"
+                  name="leyka_donor_phone"
+                  class="form-control tel"
+                  inputmode="tel"
+                  value=""
+                />
+              </div>
+              <div class="captcha captcha-right">
+                <img src="images/captcha.png" alt="" />
+              </div>
+              <div class="form-content__foot">
+                <a
+                  href="#thanks"
+                  data-fancybox
+                  class="form-content__btn btn btn-blue"
+                >
+                  Отправить
+                </a>
+                <label class="checkbox">
+                  <span class="checkbox__inner">
+                    <input type="checkbox" checked />
+                    <span></span>
+                  </span>
+                  <span class="checkbox__text"
+                    >Нажимая кнопку, я принимаю
+                    <a href="#">условия соглашения</a>
+                  </span>
+                </label>
               </div>
             </div>
+          </div>
         </div>
       </form>
     </div>

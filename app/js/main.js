@@ -1,10 +1,7 @@
 $(document).ready(function() {
 	$('.select2').select2({
-		placeholder: 'Регион',
 		minimumResultsForSearch: 1
 	})
-
-
 
 	$('.field input, .field-area textarea').keyup(function() {
 		const label = $(this).parent().find('.field__label')
@@ -193,14 +190,12 @@ $(document).ready(function() {
 			IMask(el, {
 				mask: Date,
 				min: min,
-				max: max,
+				max: max
 			})
 		})
 	})
 
-
-
-		$('[data-country]').on('change', function() {
+	$('[data-country]').on('change', function() {
 		if ($(this).data('resident') === true) {
 			$(this)
 				.closest('form')
@@ -210,8 +205,4 @@ $(document).ready(function() {
 			$(this).closest('form').find('[data-field="REGION"]').addClass('disabled')
 		}
 	})
-
-
-
-	
 })
